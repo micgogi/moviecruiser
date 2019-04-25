@@ -1,0 +1,46 @@
+{
+  "watchlist": [
+    {
+      "vote_count": 348,
+      "id": 512196,
+      "video": false,
+      "vote_average": 6.2,
+      "title": "Happy Death Day 2U",
+      "popularity": 119.109,
+      "poster_path": "https://image.tmdb.org/t/p/w500/whtt9F8PFqvEgc4fDSHZPkitFk4.jpg",
+      "original_language": "en",
+      "original_title": "Happy Death Day 2U",
+      "genre_ids": [
+        27,
+        9648,
+        53,
+        878,
+        35
+      ],
+      "backdrop_path": "/7trJGwprMUMKhvSx94lmsq6d985.jpg",
+      "adult": false,
+      "overview": "Collegian Tree Gelbman wakes up in horror to learn that she's stuck in a parallel universe. Her boyfriend Carter is now with someone else, and her friends and fellow students seem to be completely different versions of themselves. When Tree discovers that Carter's roommate has been altering time, she finds herself once again the target of a masked killer. When the psychopath starts to go after her inner circle, Tree soon realizes that she must die over and over again to save everyone.",
+      "release_date": "2019-02-13"
+    },
+    {
+      "vote_count": 2240,
+      "id": 490132,
+      "video": false,
+      "vote_average": 8.3,
+      "title": "Green Book",
+      "popularity": 107.234,
+      "poster_path": "https://image.tmdb.org/t/p/w500/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg",
+      "original_language": "en",
+      "original_title": "Green Book",
+      "genre_ids": [
+        18,
+        35,
+        10402
+      ],
+      "backdrop_path": "/Arxw3x7Y1jmkYryy0CodKce0Cms.jpg",
+      "adult": false,
+      "overview": "Tony Lip, a bouncer in 1962, is hired to drive pianist Don Shirley on a tour through the Deep South in the days when African Americans, forced to find alternate accommodations and services due to segregation laws below the Mason-Dixon Line, relied on a guide called The Negro Motorist Green Book.",
+      "release_date": "2018-11-16"
+    }
+  ]
+}

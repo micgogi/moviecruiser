@@ -1,0 +1,29 @@
+image: java:8-jdk
+before_script:
+  - 'source ./project.sh'
+stages:
+  - test
+  - build
+services:
+  - 'mysql:5.5'
+variables:
+  MYSQL_DATABASE: movie_database
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_CI_URL: jdbc:mysql://mysql/movie_database
+  MYSQL_USER: test
+  MYSQL_PASSWORD: test
+cache:
+  paths:
+  - .m2/repository
+  - target
+maven-test:
+  image: maven:3-jdk-8
+  stage: test
+  script: "mvn test -B"
+maven-build:
+  image: maven:3-jdk-8
+  stage: build
+  script: "mvn package -B"
+  artifacts:
+   paths:
+   - target/*.jar
