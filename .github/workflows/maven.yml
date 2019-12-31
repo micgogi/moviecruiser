@@ -16,6 +16,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Scipt File
+      run: source ./project.sh
     - name: Create db
       run: mysql -uroot -proot -e "CREATE DATABASE moviedb;"
     - name: Build with Maven
