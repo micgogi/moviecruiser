@@ -17,8 +17,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Scipt File
-      run: chmod +x  ./project.sh
+      run: source './project.sh'
     - name: Create db
-      run: mysql -uroot -proot -e "CREATE DATABASE moviedb;"
+      run: mysql -uroot -proot -e "CREATE DATABASE movie_database;"
     - name: Build with Maven
       run: mvn install package
