@@ -26,8 +26,8 @@ jobs:
       run: mvn install package
     - name: docker-login
       env:
-        DOCKER_USER: ${{DOCKER_HUB_USERNAME}}
-        DOCKER_PASSWORD: ${{DOCKER_HUB_ACCESS_TOKEN}}
+        DOCKER_USER: ${{secrets.DOCKER_HUB_USERNAME}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build docker image
