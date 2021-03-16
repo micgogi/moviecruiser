@@ -21,7 +21,9 @@ jobs:
     - name: start mysql
       run: sudo service mysql start
     - name: Install Angular
-      run: npm install -g @angular/cli@7.3.5
+      run: |
+        sudo apt-get update 
+        sudo npm install -g @angular/cli@7.3.5
     - name: Create db
       run: mysql -uroot -proot -e "CREATE DATABASE movie_database;"
     - name: Build with Maven
