@@ -28,6 +28,13 @@ jobs:
       run: mysql -uroot -proot -e "CREATE DATABASE movie_database;"
     - name: Build with Maven
       run: mvn install package
+    - name: Cache local Maven repository
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
     - name: docker-login
       env:
         DOCKER_USER: ${{secrets.DOCKER_HUB_USERNAME}}
